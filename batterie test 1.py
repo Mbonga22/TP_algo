@@ -5,7 +5,9 @@ Created on Tue Dec 27 16:14:28 2022
 @author: Gloire MBONGA AND JOSEPH DZAPILI
 """
 #orienter objet = heritage
+from time import*
 from tp_algo import *
+debut=time()
 fre=triangle(5,5,6,4)
 print("la surface vaut :", fre.aire())
 print("le perimetre vaut :", fre.perimetre())
@@ -18,3 +20,7 @@ print("le perimetre du carre vaut :",CAR.perimetre())
 CIRCLE=cercle(48)
 print("la surface du cercle vaut {:.2f}".format(CIRCLE.aire()))
 print("le perimetre du cercle vaut {:.2f}:".format(CIRCLE.perimetre()))
+fin=time()
+temps=fin-debut
+
+print("le temps d'execution est {:.2f}".format(temps))
